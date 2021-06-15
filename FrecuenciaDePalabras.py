@@ -1,0 +1,28 @@
+def abrirLeertxt():
+    try:
+        archivo = open("Book 4 - The Goblet of Fire.txt", encoding='utf-8')
+        texto = archivo.read()
+        quitar = ',;.-¿”!“¡()—:?\n|\t"'
+        for caracter in quitar:
+            texto = texto.replace(caracter, "")
+
+        texto = texto.lower()
+        palabras = texto.split(" ")
+        frecuencias = {}
+        for palabra in palabras:
+            if palabra in frecuencias:
+                frecuencias[palabra] += 1
+            else:
+                frecuencias[palabra] = 1
+        for palabra in frecuencias:
+            frecuencia = frecuencias[palabra]
+            print(f"({palabra},{frecuencia})")
+
+    except FileNotFoundError:
+        msg="Existe un problema con el archivo"
+        print(msg)
+abrirLeertxt()
+
+
+
+
