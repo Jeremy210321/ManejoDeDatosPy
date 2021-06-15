@@ -1,6 +1,6 @@
 def abrirLeertxt():
     try:
-        archivo = open("Book 4 - The Goblet of Fire.txt", encoding='utf-8')
+        archivo = open("Book_4_The_Goblet_of_Fire.txt", encoding='utf-8')
         texto = archivo.read()
         quitar = ',;.-¿”!“¡()—:?\n|\t"'
         for caracter in quitar:
