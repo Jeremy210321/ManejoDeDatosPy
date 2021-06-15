@@ -23,7 +23,7 @@ def abrirLeertxt():
         msg="Existe un problema con el archivo"
         print(msg)
 abrirLeertxt()
-
+# Desarrollado por: Jeremy León
 
 
 
