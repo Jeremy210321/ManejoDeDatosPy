@@ -2,7 +2,7 @@ def abrirLeertxt():
     try:
         archivo = open("Book_4_The_Goblet_of_Fire.txt", encoding='utf-8')
         texto = archivo.read()
-        quitar = ',;.-¿”!“¡()—:?\n|\t"'
+        quitar = ',;.-¿”!“¡()—:/?\n|\t"'
         print("\t\t\tFRECUENCIA DE PALABRAS EN UN ARCHIVO .txt\n")
         for caracter in quitar:
             texto = texto.replace(caracter, "")
